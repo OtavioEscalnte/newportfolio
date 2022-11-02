@@ -1,24 +1,18 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-display: flex;
-justify-content: space-between;
-  
-  max-width: 1216px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
   width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 
-`
-
-export const TextContainer = styled.div`
-display: flex;
+.text-container {
+  display: flex;
 flex-direction: column;
 align-items: flex-start;
 justify-content: center;
-
-
-
-
+}
 
 .description {
   font-family: ${({theme})=> theme.fonts.primary};
@@ -40,6 +34,12 @@ justify-content: center;
   color: ${({theme})=>theme.colors.white};
 
   margin: 2.2rem 0;
+}
+
+.container-img {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 `
