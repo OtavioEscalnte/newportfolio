@@ -15,7 +15,7 @@ export function Header () {
             <li><a href="">Qualificações</a></li>
           </ul>
         </Menu>
-        <Button title="Contato"/>
+        <Button btn_title="Contato"/>
       </header>
       
     </Container>

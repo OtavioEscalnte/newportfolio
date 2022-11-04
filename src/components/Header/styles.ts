@@ -43,6 +43,7 @@ export const Menu = styled.nav`
 
             color: ${({theme})=> theme.colors.gray_primary};
 
+            text-transform: uppercase;
             text-decoration: none;
             transition: 0.5s;
 

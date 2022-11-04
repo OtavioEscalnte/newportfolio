@@ -14,7 +14,7 @@ export const Btn = styled.button`
   border-radius: 8px;
 
   width: 155px;
-  padding: 12px 0;
+  padding: 12px 18px;
   
   transition: 0.5s;
   
