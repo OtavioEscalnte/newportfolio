@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px,1fr));
   width: 90%;
-  max-width: 1200px;
+  max-width: 1216px;
   margin: 0 auto;
 
 .text-container {
@@ -40,6 +40,11 @@ justify-content: center;
   display: flex;
   justify-content: flex-end;
   width: 100%;
+
+  img {
+    max-width: 490px;
+    width: 100%;
+  }
 }
 
 `

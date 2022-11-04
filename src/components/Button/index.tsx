@@ -1,11 +1,11 @@
 import { Btn } from "./styles"
 
 type Props = {
-  title:string
+  btn_title:string
 }
 
-export function Button ({title}:Props) {
+export function Button ({btn_title}:Props) {
   return (
-    <Btn>{title}</Btn>
+    <Btn>{btn_title}</Btn>
   )
 }
