@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 48px;
+  margin-top: 4.8rem;
 
 
 
@@ -15,6 +15,6 @@ export const Container = styled.div`
 
     color: ${({theme})=> theme.colors.white};
 
-    margin-top: 16px;
+    margin-top: 1.6rem;
   }
 `

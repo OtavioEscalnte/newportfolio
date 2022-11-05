@@ -5,20 +5,21 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  padding: 150px 0;
+  padding: 15rem 0;
 
   width: 100%;
 
-
+  
   background: linear-gradient(170.4deg, #7B6CF6 19.69%, rgba(203, 83, 244, 0.42) 108.32%);
-  margin-top: 200px;
+  margin-top: 20rem;
+
 
   .about-container {
   background-color: ${({theme})=> theme.colors.black_secundary};
 
-  max-width: 1216px;
+  max-width: 121.6rem;
   width: 90%;
-  padding: 0 38px;
+  padding: 0 3.8rem;
 
   border-radius: 20px;
   box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.25);
@@ -32,7 +33,7 @@ export const Container = styled.div`
 
     color: ${({theme})=>theme.colors.white};
 
-    margin-top: 32px;
+    margin-top: 3.2rem;
   }
 
 
@@ -41,19 +42,23 @@ export const Container = styled.div`
   .me-container {
     display: flex;
     align-items: center;
+    width: 100%;
 
-    margin: 24px 0 86px;
+    margin: 2.4rem 0 8.6rem;
 
-    img {
-      max-width: 300px;
-      width: 100%;
+    
 
-      border: 6px solid ${({theme})=> theme.colors.purple};
-      border-radius: 50%;
-    }
+  .avatar {
+    max-width: 20rem;
+    width: 100%;
 
+    border: 6px solid ${({theme})=> theme.colors.purple};
+    border-radius: 50%;
+  }
+
+    
     .text-container {
-      margin-left: 32px;
+      margin-left: 3.5rem;
     
       .description {
         font-family: ${({theme})=>theme.fonts.primary};
@@ -67,6 +72,24 @@ export const Container = styled.div`
     }
   }
 }
+
+@media (max-width:992px) {
+
+  .about-container {
+
+    .me-container {
+      display: flex;
+      flex-direction: column;
+  
+      .text-container {
+        margin-top: 2.0rem;
+        margin-left: 0;
+      }
+    }
+  }
+
+}
+
 `
 
 

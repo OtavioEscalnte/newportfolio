@@ -1,5 +1,6 @@
 import { TechnologyItem } from "../TechnologyItem";
 import { Container } from "./style";
+import Fade from 'react-reveal/Fade'
 
 import HtmlImg from '../../assets/img/html_img.svg'
 import CssImg from '../../assets/img/css_img.svg'
@@ -15,10 +16,15 @@ import GithubImg from '../../assets/img/github_img.svg'
 
 export function Experience() {
   return (
-    <Container>
-      <div className="blur">
+    <Container id="experience">
+   
+      <Fade top>
       <h2 className="title">Experiência</h2>
+      </Fade>
+      <Fade bottom>
       <p className="description">Ao longo do tempo de estudo e prática aprendi diversas tecnologias que me propuseram criar interfaces modernas e dinâmicas entre estas tecnologias estão:</p>
+      </Fade>
+      <Fade bottom>
       <div className="container-items">
         <TechnologyItem img_src={ReactImg} name="React-Js"/>
         <TechnologyItem img_src={ReactImg} name="React-Native"/>
@@ -29,7 +35,7 @@ export function Experience() {
         <TechnologyItem img_src={GitImg} name="Git"/>
         <TechnologyItem img_src={GithubImg} name="GitHub"/>
       </div>
-      </div>
+      </Fade>
     </Container>
   )
 }

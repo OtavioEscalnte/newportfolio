@@ -3,15 +3,15 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   background-color: ${({theme})=> theme.colors.black_secundary};
-  padding: 16px 0;
+  padding: 1.6rem 0;
 
-  margin-top:200px;
+  margin-top:20rem;
   .footer-details {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    max-width: 1216px;
+    max-width: 121.6rem;
     width: 90%;
 
     margin: 0 auto;
@@ -36,13 +36,15 @@ export const Container = styled.div`
 
   .icon-container {
     display: flex;
-    gap:0 24px;
+    gap:2.4rem;
 
-    i{
+    a{
       font-size: 24px;
       color: ${({theme})=> theme.colors.gray_primary};
-      margin-top: 14px;
+      margin-top: 1.4rem;
       transition: 0.5s;
+
+      text-decoration: none;
 
       &:hover {
         color: ${({theme})=> theme.colors.purple};
@@ -51,5 +53,15 @@ export const Container = styled.div`
     }
   }
 }
+  }
+
+  @media (max-width:768px) {
+    .footer-details {
+      flex-direction: column-reverse;
+
+      p {
+        margin-top: 1.0rem;
+      }
+    }
   }
 `
