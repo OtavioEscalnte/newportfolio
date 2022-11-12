@@ -1,13 +1,18 @@
 import { Container } from "./styles";
-
+import Fade from 'react-reveal/Fade'
 
 export function AboutMe() {
   return (
     <Container>
+      <Fade left>
       <div className="about-container">
-          <h2 className="title">Sobre Mim</h2>
+        
+          <h2 className="title" id="about-me">Sobre Mim</h2>
+       
           <div className="me-container">
-            <img src="https://avatars.githubusercontent.com/u/77994942?v=4" alt="" />
+            
+            <img className="avatar" src="https://avatars.githubusercontent.com/u/77994942?v=4" alt="" />
+            
             <div className="text-container">
                 <p className="description"><strong>Eai tudo bem?</strong></p>
                 <p className="description">
@@ -16,6 +21,7 @@ export function AboutMe() {
             </div>
           </div>
       </div>
+      </Fade>
     </Container>
   )
 }

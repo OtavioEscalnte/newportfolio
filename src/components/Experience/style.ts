@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  max-width: 592px;
+  max-width: 59.2rem;
   width: 90%;
   margin: 0 auto;
   position: relative;
@@ -17,7 +17,7 @@ export const Container = styled.div`
 
     color: ${({theme})=> theme.colors.white};
 
-    margin: 200px 0 32px;
+    margin: 20rem 0 3.2rem;
    
   }
 
@@ -34,9 +34,13 @@ export const Container = styled.div`
 
   .container-items {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    justify-content: space-between;
-    align-items: baseline;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    margin: 0 auto;
+  }
 
+  @media (max-width:768px) {
+    .title {
+      margin-top: 12rem;
+    }
   }
 `

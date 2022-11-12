@@ -1,20 +1,26 @@
 import { Container, Status } from "./styles";
 
-import UnoparImg from '../../assets/img/unopar.svg'
 import { Button } from "../Button";
-import theme from "../../styles/theme";
+
+
+
 
 type Props = {
   logo: string
   title_card: string
   date: string
   status: string 
-  finished?: boolean
+  finished?: boolean,
+  href?:string;
+  download?:any;
+
 }
 
 
-export function QualificationsCard({logo, title_card, date, status,finished}:Props) {
 
+
+export function QualificationsCard({logo, title_card, date, status,finished,href,download}:Props) {
+  
 
   return (
     <Container >
@@ -26,7 +32,7 @@ export function QualificationsCard({logo, title_card, date, status,finished}:Pro
           </div>
           <div className="bottom-container">
             <p className="status">Status:<Status finished={finished}>{status}</Status></p>
-            <Button btn_title="Ver Certificado"/>
+            <Button btn_title="Ver Certificado" href={href} download={download} />
           </div>
         </div>
     </Container>

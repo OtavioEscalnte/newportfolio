@@ -10,10 +10,10 @@ export function Footer () {
           <h3 className="social-title">Redes Sociais</h3>
 
           <div className="icon-container">
-            <i><FaFacebook/></i>
-            <i><FaInstagram/></i>
-            <i><FaGithub/></i>
-            <i><FaLinkedin/></i>
+            <a href="https://www.facebook.com/otavio.reiescalante/" target="_black"><FaFacebook/></a>
+            <a href="https://instagram.com/otavioreir?igshid=YmMyMTA2M2Y=" target="_black"><FaInstagram/></a>
+            <a href="https://github.com/OtavioEscalnte" target="_black"><FaGithub/></a>
+            <a href="https://www.linkedin.com/in/ot%C3%A1vio-rei-escalante-440550244/" target="_black"><FaLinkedin/></a>
           </div>
         </div>
 

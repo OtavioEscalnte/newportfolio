@@ -13,5 +13,12 @@ export const ResetStyle = createGlobalStyle`
 
   body {
     background-color:#171717;
+    overflow-x: hidden;
+  }
+
+  @media (max-width:768px) {
+    html {
+      font-size: 50%;
+    }
   }
 `
